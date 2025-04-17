@@ -44,7 +44,7 @@ function MealPlannerForm() {
     setParsedPlan({ days: [], groceryList: {} });
 
     try {
-      const response = await fetch("https://ai-meal-planner-backend.onrender.com", {
+      const response = await fetch('https://ai-meal-planner-backend.onrender.com', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
